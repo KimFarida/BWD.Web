@@ -1,7 +1,8 @@
-﻿@using Microsoft.AspNetCore.Identity
+﻿@using BWD.Web.Areas.Identity.Data;
+@using Microsoft.AspNetCore.Identity
 
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
+@inject SignInManager<Users> SignInManager
+@inject UserManager<Users> UserManager
 
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
